@@ -26,5 +26,14 @@ end
 end
 
 def get_english_meaning
+   trans = load_library(path)
+  if trans[:get_meaning][j_emoticon]
+    trans[:get_meaning][j_emoticon]
+  else 
+  return "Sorry, that emoticon was not found"
+end
+ #Write a method, get_japanese_emoticon, that will take a traditional Western emoticon, like :) and translate it to its Japanese version. It will rely load_library to work. Refer to the table below for translations.
+end
+  
   #Write a method, get_english_meaning, that takes a Japanese emoticon and returns its meaning in English. This method will also rely on load_library to first load the YAML file.
 end
