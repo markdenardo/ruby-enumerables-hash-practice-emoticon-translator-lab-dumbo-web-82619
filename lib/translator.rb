@@ -8,9 +8,8 @@ def load_library(file_path)
     results.each do |string, emos|
       #binding.pry
 #write in to our hash a new key valued pair of the string and the emoticon
-    hash[:get_emoticon][string] = emos
-    # hash[:get_emoticon][emos(0)]
-    # hash[:get_meaning][emos(1)]
+    hash[:get_emoticon][string] = emos[1]
+    hash[:get_meaning][emos[1]] = emos[0]
     end
   hash
  #Write a method, load_library, that loads the emoticons.yml file.
