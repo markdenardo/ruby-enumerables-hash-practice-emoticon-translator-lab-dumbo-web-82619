@@ -27,8 +27,8 @@ end
 
 def get_english_meaning
    trans = load_library(path)
-  if trans[:get_meaning][j_emoticon]
-    trans[:get_meaning][j_emoticon]
+  if trans[:get_emoticon][j_emoticon]
+    trans[:get_emoticon][j_emoticon]
   else 
   return "Sorry, that emoticon was not found"
 end
