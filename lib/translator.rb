@@ -25,10 +25,10 @@ end
  #Write a method, get_japanese_emoticon, that will take a traditional Western emoticon, like :) and translate it to its Japanese version. It will rely load_library to work. Refer to the table below for translations.
 end
 
-def get_english_meaning(path,j_emoticon)
+def get_english_meaning(path,string)
    trans = load_library(path)
-  if trans[:get_emoticon][j_emoticon]
-    trans[:get_emoticon][j_emoticon]
+  if trans[:get_emoticon][string]
+    trans[:get_emoticon][string]
   else 
   return "Sorry, that emoticon was not found"
 end
