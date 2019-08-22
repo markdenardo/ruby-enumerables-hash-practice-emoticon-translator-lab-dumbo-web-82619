@@ -18,6 +18,7 @@ end
 def get_japanese_emoticon(path, e_emoticon)
   trans = load_library(path)
   if trans[:get_emoticon][e_emoticon]
+    trans[:get_emoticon][e_emoticon]
   else 
   return "Sorry, that emoticon was not found"
 end
